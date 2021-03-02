@@ -1,0 +1,29 @@
+.headLine {
+    text-align: center;
+}
+.tweetList {
+    width: 40%;
+    padding-left: 30%;
+    padding-bottom: 3%;
+}
+.tweetImg {
+    width: 10%;
+    border-radius: 50%;
+}
+.tweetDate {
+    font-size: small;
+    padding-bottom: 1%;
+}
+.tweetText {
+    font-size: large;
+    padding: 0.8%;
+}
+.tweetTextRed {
+    background-color: red;
+}
+.tweetTextGreen {
+    background-color: green;
+}
+.tweetLikes {
+    text-align: right;
+}

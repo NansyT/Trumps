@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<header></header>
+<body>
+
+    <h1 class="headLine">Trumps tweets</h1>
+    <br>
+
+    <div class="tweetList" *ngFor="let tweet of twat">
+        <div>
+            <img class="tweetImg" src="images.jpg">
+            <div class="tweetDate">
+                Date: {{tweet.date}}
+            </div>
+            <div *ngIf="findWord(tweet.text) || moreLikes(tweet.likes); else elseBlock" [ngClass]="'tweetTextRed'" >
+                {{tweet.text}}
+            </div>
+            <ng-template #elseBlock>
+                <div [ngClass]="'tweetTextGreen'" >
+                    {{tweet.text}}
+                </div>
+            </ng-template>
+            <div class="tweetLikes">
+                Likes: {{tweet.likes}}
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
